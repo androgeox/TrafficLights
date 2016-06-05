@@ -1,12 +1,7 @@
 package Model;
 
-import javax.swing.*;
-import java.awt.event.ActionListener;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Georgiy on 31.05.2016.
- */
 public class LightsTimer {
 
     private int delay;
@@ -14,12 +9,10 @@ public class LightsTimer {
 //    private int delay_yellow;
 //    private int delay_green;
 
-
-    public LightsTimer(){
+    public LightsTimer() {
     }
 
     public LightsTimer(int delay) {
-
     }
 
 //    public void setDelay(int delay_red, int delay_yellow, int delay_green) {
@@ -35,9 +28,8 @@ public class LightsTimer {
     public void start() {
         try {
             TimeUnit.SECONDS.sleep(delay);
-
-//            TimeUnit.MINUTES.sleep(delay_yellow);
-//            TimeUnit.MINUTES.sleep(delay_green);
+//          TimeUnit.MINUTES.sleep(delay_yellow);
+//          TimeUnit.MINUTES.sleep(delay_green);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
